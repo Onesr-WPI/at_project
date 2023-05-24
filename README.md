@@ -1,3 +1,28 @@
 # at_project
-woohoo
-woohoo V2
+
+
+This is the code that was written for the STEM 2 Assistive Technology Project at Mass Academy. These programs are used on the Raspberry Pi to communicate to and control each of the motors. For most programs, there is an automatic and manual version.
+
+
+Arm Extension:
+
+The arm extension system uses a Vex motor that is controlled by an arduino. The Raspberry Pi establishes serial communication with the Arduino, then instructs the Arduino to move the Vex motor in either direction in order to either extend or retract the feeding arm. The relevant programs are:
+
+./arduino_test.py
+./arduino_test2.py
+./arm-extesnion.py
+./arm_extension_manual.py
+./vex.py
+
+Height:
+
+Modifying the height of the system is accomplished by communicating to the stepper motor(s) through a WaveShare motor hat, giving as input the number of steps that the motor must turn in each direction. The relevant programs are:
+
+./height_manual.py
+
+Spoon Mechanism:
+
+The spoon is operated by a single servo motor, which is the easiest to control from all of the motors. The angle is given to the motor, and it is adjusted accordingly. The relevant programs are:
+
+./Scoop-1.py
+
