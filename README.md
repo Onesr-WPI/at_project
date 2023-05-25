@@ -41,7 +41,7 @@ Perform the following commands:
 
 ```
 sudo mv listen_for_shutdown.sh /etc/init.d/
-sudo chmod + x /etc/init.d/listen_for_shutdown.sh
+sudo chmod +x /etc/init.d/listen_for_shutdown.sh
 
 sudo mv listen_for_shutdown.py /usr/local/bin
 sudo chmod +x /usr/local/bin/listen_for_shutdown.py
