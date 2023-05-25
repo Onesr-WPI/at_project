@@ -26,3 +26,27 @@ The spoon is operated by a single servo motor, which is the easiest to control f
 
 ./Scoop-1.py
 
+
+
+
+
+
+
+
+To install to your project, clone the repo and move all files to the root directory. 
+
+Rename all occurences of "kammvaibes" to the name of the user on your Raspberry Pi.
+
+Perform the following commands:
+
+```
+sudo mv listen_for_shutdown.sh /etc/init.d/
+sudo chmod + x /etc/init.d/listen_for_shutdown.sh
+
+sudo mv listen_for_shutdown.py /usr/local/bin
+sudo chmod +x /usr/local/bin/listen_for_shutdown.py
+
+sudo listen_for_shutdown.sh start
+```
+
+Restart the Raspberry Pi, and if all components are wired correctly, the installation is complete.
