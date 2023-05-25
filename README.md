@@ -24,11 +24,10 @@ Spoon Mechanism:
 
 The spoon is operated by a single servo motor, which is the easiest to control from all of the motors. The angle is given to the motor, and it is adjusted accordingly. The relevant programs are:
 
-./Scoop-1.py
+./Scoopy-1.py
 
 
-
-
+Taken together, these created the feeding_cycle.sh and feeding_button.py scripts, which allow the user to manually start the entire feeding cycle with the click of the "initiate feeding cycle" button on the wiring diagram in the instructions.
 
 
 
@@ -45,6 +44,10 @@ sudo chmod +x /etc/init.d/listen_for_shutdown.sh
 
 sudo mv listen_for_shutdown.py /usr/local/bin
 sudo chmod +x /usr/local/bin/listen_for_shutdown.py
+
+# set up other files
+
+sudo chmod +x feeding_cycle.sh feeding_button.py height_manual.py arduino_test.py Scoop-1.py
 
 sudo listen_for_shutdown.sh start
 ```
