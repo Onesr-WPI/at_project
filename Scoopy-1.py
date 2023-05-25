@@ -18,7 +18,7 @@ try:
     servo_pwm.start(2)  # Adjust the duty cycle as needed
 
     if direction == "open":
-        set_servo_angle(0)    # Move servo to 0 degrees
+        set_servo_angle(60)    # Move servo to 0 degrees
         time.sleep(1)         # Pause for 1 second
         servo_pwm.stop()
         GPIO.cleanup()
